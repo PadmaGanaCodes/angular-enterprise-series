@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './user-card.css',
 })
 export class UserCard {
-  name = 'Padma';
-  role = 'Angular Developer';
+  employeeName = 'Padma Gana';
+  designation = 'Frontend Developer';
+  experience = 7;
 }
