@@ -1,5 +1,26 @@
 <div class="card">
-  <h2>{{ employeeName }}</h2>
-  <p>Designation: {{ designation }}</p>
+
+  <div class="employee-header">
+    <img [src]="profileImage" alt="Employee Profile" />
+
+    <div class="employee-info">
+      <h2>{{ employeeName }}</h2>
+      <p>{{ designation }}</p>
+    </div>
+  </div>
+
   <p>Experience: {{ experience }} Years</p>
+
+  <input
+    type="text"
+    [(ngModel)]="employeeName"
+    placeholder="Update Employee Name"
+  />
+
+  <br /><br />
+
+  <button (click)="updateDesignation()">
+    Promote Employee
+  </button>
+
 </div>
