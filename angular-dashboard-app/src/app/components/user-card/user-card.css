@@ -39,3 +39,13 @@ button {
   padding: 8px 16px;
   cursor: pointer;
 }
+
+.active-status {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive-status {
+  color: red;
+  font-weight: bold;
+}

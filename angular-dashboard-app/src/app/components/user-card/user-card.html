@@ -19,8 +19,24 @@
 
   <br /><br />
 
+
+  @if (isActive) {
+    <p class="active-status">Active Employee</p>
+  } @else {
+    <p class="inactive-status">Inactive Employee</p>
+  }
+  <p [ngStyle]="{ 'font-weight': 'bold', 'font-size': '18px' }">
+    Experience: {{ experience }} Years
+  </p>
+  <h3>Skills</h3>
+  <ul>
+    @for (skill of skills; track skill) {
+      <li>{{ skill }}</li>
+    }
+  </ul>
+
+  
   <button (click)="updateDesignation()">
     Promote Employee
   </button>
-
 </div>
