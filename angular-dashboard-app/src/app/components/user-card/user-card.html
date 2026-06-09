@@ -4,10 +4,13 @@
     <img [src]="profileImage" alt="Employee Profile" />
 
     <div class="employee-info">
-      <h2>{{ employeeName }}</h2>
-      <p>{{ designation }}</p>
+        <h2>{{ employeeName | titlecase }}</h2>
+        <p>{{ designation | uppercase }}</p>
+        <p>Joining Date: {{ joiningDate | date:'dd MMM yyyy' }}</p>
+        <p>Salary: {{ salary | currency:'INR' }}</p>
+        <p>Employee ID: {{ employeeId | employeeId }}</p>
     </div>
-  </div>
+    </div>
 
   <p>Experience: {{ experience }} Years</p>
 
